@@ -1,0 +1,69 @@
+<div class="navbar navbar-expand-lg"><a class="navbar-toggler mr-1" href="" data-id="headers-1-sidebar-toggle"><img
+            src="./assets/glyphs/burger.svg" /></a>
+    <div class="mr-4"><img src="./assets/logos/acme.svg" width="62" /></div>
+    <div class="collapse navbar-collapse weight-500">
+        <div class="navbar-nav">
+            <div class="nav-item"><a class="nav-link text-dark" href="">First</a></div>
+            <div class="nav-item"><a class="nav-link text-dark" href="">Second</a></div>
+            <div class="nav-item"><a class="nav-link text-dark" href="">Third</a></div>
+            <div class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle" href="" id="headers-1-dropdown"
+                    data-toggle="dropdown">Fourth</a>
+                <div class="dropdown-menu" aria-labelledby="headers-1-dropdown"><a class="dropdown-item" href="">Action
+                        1</a><a class="dropdown-item" href="">Action 2</a><a class="dropdown-item" href="">Action 3</a>
+                </div>
+            </div>
+            <div class="nav-item"><a class="nav-link text-dark" href="">Fifth</a></div>
+            <div class="nav-item"><a class="nav-link text-dark" href="">Sixth</a></div>
+        </div>
+    </div>
+    <div class="ml-auto d-lg-none"><a href=""><img src="./assets/glyphs/star-primary.svg" width="24" /></a></div>
+    <div class="ml-auto d-none d-lg-block"><a class="btn btn-primary" href="">Action</a></div>
+</div>
+<div class="navbar-side" id="headers-1-sidebar" data-id="headers-1-sidebar-close">
+    <div class="navbar-side-content d-flex flex-column justify-content-between">
+        <div class="weight-700"><a class="navbar-side-close mb-4" href="" data-id="headers-1-sidebar-close"><img
+                    src="./assets/glyphs/close.svg" width="32" /></a>
+            <div class="navbar-nav">
+                <div class="nav-item"><a class="nav-link text-dark" href="">First</a></div>
+                <div class="nav-item"><a class="nav-link text-dark" href="">Second</a></div>
+                <div class="nav-item"><a class="nav-link text-dark" href="">Third</a></div>
+                <div class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle" href=""
+                        id="headers-1-dropdown" data-toggle="dropdown">Fourth</a>
+                    <div class="dropdown-menu" aria-labelledby="headers-1-dropdown"><a class="dropdown-item"
+                            href="">Action 1</a><a class="dropdown-item" href="">Action 2</a><a class="dropdown-item"
+                            href="">Action 3</a></div>
+                </div>
+                <div class="nav-item"><a class="nav-link text-dark" href="">Fifth</a></div>
+                <div class="nav-item"><a class="nav-link text-dark" href="">Sixth</a></div>
+            </div>
+        </div>
+        <div>
+            <p class="mb-3"><a class="transparent-invert-link" href=""><img src="./assets/glyphs/instagram-small.svg"
+                        width="16" /></a><a class="transparent-invert-link ml-2" href=""><img
+                        src="./assets/glyphs/facebook-small.svg" width="16" /></a><a
+                    class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/twitter-small.svg"
+                        width="16" /></a><a class="transparent-invert-link ml-2" href=""><img
+                        src="./assets/glyphs/pinterest-small.svg" width="16" /></a><a
+                    class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/thumbler-small.svg"
+                        width="16" /></a></p>
+            <p class="small mb-0"><span class="d-block d-xl-inline text-muted mb-1 mb-xl-0 mr-2">&copy; 2019 Acme. All
+                    right reserved.</span><a class="text-muted mr-2" href=""><span>Privacy Policy</span></a><a
+                    class="text-muted" href=""><span>Terms of Service</span></a></p>
+        </div>
+    </div>
+    <div class="navbar-side-content weight-700"><a class="navbar-side-close mb-4" href=""
+            data-id="headers-2-sidebar-close"><img src="./assets/glyphs/close.svg" width="32" /></a></div>
+</div>
+
+<script>
+    $(function () {
+        $('[data-id=headers-1-sidebar-toggle]').click(function (e) {
+            e.preventDefault();
+            $('#headers-1-sidebar').toggleClass('show');
+        });
+        $('[data-id=headers-1-sidebar-close]').click(function (e) {
+            e.preventDefault();
+            $('#headers-1-sidebar').removeClass('show');
+        });
+    });
+</script>

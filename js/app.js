@@ -20,11 +20,6 @@ function loadSliders() {
     }
 }
 
-// Used by recaptcha
-function onSuccessfulCaptchaSubmit(token) {
-    document.getElementById('#form').submit();
-}
-
 function handleSubscriptionForm(selector) {
     var _form = document.querySelector(selector);
 

@@ -1,0 +1,26 @@
+win_medals:
+  images:
+    - assets/pictures/full-phone-555x380.png
+    - assets/pictures/head-phone-555x380.png
+  header: Win medals while discovering the world
+  description: |
+    Every time you visit a place, city or monument, you will win a medal that will be your VIP pass towards a discount list.
+    What are you waiting for? The more you travel, the more medals you earn. Collect them all to keep track of the places you visit.
+
+plan_your_trip:
+  images:
+    - assets/pictures/full-phone-555x380.png
+    - assets/pictures/head-phone-555x380.png
+  header: Plan your entire trip in one click
+  description: |
+    Don't waste time planning your vacation. We have an itinerary planner that allows you to create an entire route with just one click.
+    In addition, you can book tickets and find information about the places you are going to visit to be prepared for the adventure.
+
+bookings:
+  images:
+    - assets/pictures/full-phone-555x380.png
+    - assets/pictures/head-phone-555x380.png
+  header: All your bookings in one place
+  description: |
+    No more stress of searching for your reservation emails, as all your activities confirmations will be in the same place.
+    Stay calm and enjoy your trip!

@@ -10,7 +10,7 @@ layout: compress
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'css/main.css?' | append: cached_version | relative_url }}" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{'/apple-touch-icon.png' | relative_url}}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{'/favicon-32x32.png' | relative_url}}">
@@ -56,7 +56,7 @@ layout: compress
   <script defer src="{{'/js/axios.min.js' | relative_url }}"></script>
   <script defer src="{{'/js/swiper.min.js' | relative_url }}"></script>
   <!-- <script defer src="{{'/js/bootstrap.bundle.min.js' | relative_url }}"></script> -->
-  <script defer src="{{'/js/app.js' | relative_url }}"></script>
+  <script defer src="{{'/js/app.js?' | append: cached_version | relative_url }}"></script>
 </body>
 
 </html>

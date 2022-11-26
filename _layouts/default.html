@@ -24,6 +24,9 @@ layout: compress
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="628">
 
+  <link rel="preconnect" href="https://www.google.com">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WECG66K1FG"></script>
   <script>
@@ -48,6 +51,7 @@ layout: compress
     {{ content }}
   </div>
 
+  <script defer src="https://www.google.com/recaptcha/api.js"></script>
   <!-- <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
   <script defer src="{{'/js/axios.min.js' | relative_url }}"></script>
   <script defer src="{{'/js/swiper.min.js' | relative_url }}"></script>

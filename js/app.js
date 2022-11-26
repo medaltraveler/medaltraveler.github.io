@@ -20,6 +20,11 @@ function loadSliders() {
     }
 }
 
+// Used by recaptcha
+function onSuccessfulCaptchaSubmit(token) {
+    document.getElementById('#form').submit();
+}
+
 function handleSubscriptionForm(selector) {
     var _form = document.querySelector(selector);
 
@@ -28,8 +33,9 @@ function handleSubscriptionForm(selector) {
     }
 
     _form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
         try {
-            e.preventDefault();
             e.target.querySelector('[type="submit"]').disabled = true;
             var _data = new FormData(e.target);
 

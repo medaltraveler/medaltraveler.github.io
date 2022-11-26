@@ -3,14 +3,25 @@
         <h1 class="display-4">{{ include.header }}</h1>
         <p class="large mb-4">{{ include.description }}</p>
         <form action="#" class="input-group mb-2" id="form" data-success="{{ '/thank-you' | relative_url }}">
-            <input type="email" name="email" required class="form-control form-control-lg" placeholder="your@email.com" />
+            <input type="email" name="email" required class="form-control form-control-lg"
+                placeholder="your@email.com" />
             <div class="input-group-append">
-                <button type="submit" class="btn btn-lg btn-primary">Send</button>
+                <button
+                    type="submit"
+                    class="g-recaptcha btn btn-lg btn-primary"
+                    data-sitekey="6LcflDYjAAAAAGu_5ltutzqa-T-WTeaWPD9M5LQ3"
+                    data-callback="onSuccessfulCaptchaSubmit"
+                    data-action="submit"
+                >
+                    Send
+                </button>
             </div>
         </form>
         <p class="small">
             By clicking the Button you confirming that you are agree with our following
-            <a class="text-dark weight-500" href="https://www.gdprprivacynotice.com/live.php?token=Q6huC1NrCkKobBHrD7guf8DSUyyCP68V" rel="noopener noreferrer" target="_blank"><span>Terms and Conditions</span></a>
+            <a class="text-dark weight-500"
+                href="https://www.gdprprivacynotice.com/live.php?token=Q6huC1NrCkKobBHrD7guf8DSUyyCP68V"
+                rel="noopener noreferrer" target="_blank"><span>Terms and Conditions</span></a>
         </p>
     </div>
     <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0">

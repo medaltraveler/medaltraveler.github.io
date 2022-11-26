@@ -2,10 +2,10 @@
     <div class="col-12 col-md-5 order-2 order-md-1">
         <h1 class="display-4">{{ include.header }}</h1>
         <p class="large mb-4">{{ include.description }}</p>
-        <form class="input-group mb-2">
-            <input required class="form-control form-control-lg" placeholder="Email" />
+        <form action="#" class="input-group mb-2" id="form" data-success="{{ '/thank-you' | relative_url }}">
+            <input type="email" name="email" required class="form-control form-control-lg" placeholder="your@email.com" />
             <div class="input-group-append">
-                <button class="btn btn-lg btn-primary">Send</button>
+                <button type="submit" class="btn btn-lg btn-primary">Send</button>
             </div>
         </form>
         <p class="small">

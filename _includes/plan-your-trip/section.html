@@ -9,7 +9,7 @@
                 <div class="swiper-wrapper">
                     {% for image in site.data.features.plan_your_trip.images %}
                     <div class="swiper-slide">
-                        <img class="w-100" src="{{ image | relative_url }}" />
+                        <img class="w-100" src="{{ image | relative_url }}" alt="{{ site.data.features.plan_your_trip.header }}" />
                     </div>
                     {% endfor %}
                 </div>

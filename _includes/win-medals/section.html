@@ -9,7 +9,7 @@
                 <div class="swiper-wrapper">
                     {% for image in site.data.features.win_medals.images %}
                     <div class="swiper-slide">
-                        <img class="w-100" src="{{ image | relative_url }}" />
+                        <img class="w-100" src="{{ image | relative_url }}" alt="{{ site.data.features.win_medals.header }}" />
                     </div>
                     {% endfor %}
                 </div>

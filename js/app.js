@@ -39,6 +39,8 @@ function handleSubscriptionForm(selector) {
                     .then(function (token) {
                         window.axios.post('https://eo4sh9r6qfajbb2.m.pipedream.net', {
                             'email': _data.get('email'),
+                            'token': token,
+                            'href': window.location.href,
                         }).then(function (response) {
                             console.info({ response });
                             window.location = e.target.dataset.success;

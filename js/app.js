@@ -34,17 +34,25 @@ function handleSubscriptionForm(selector) {
             e.target.querySelector('[type="submit"]').disabled = true;
             var _data = new FormData(e.target);
 
-            window.axios.post('https://eo4sh9r6qfajbb2.m.pipedream.net', {
-                'email': _data.get('email'),
-            }).then(function (response) {
-                console.info({response});
-                window.location = e.target.dataset.success;
-            }).catch(function (error) {
-                console.error({error});
-                e.target.querySelector('[type="submit"]').disabled = false;
+            window.grecaptcha.ready(function () {
+                window.grecaptcha.execute('6LcflDYjAAAAAGu_5ltutzqa-T-WTeaWPD9M5LQ3', { action: 'submit' })
+                    .then(function (token) {
+                        window.axios.post('https://eo4sh9r6qfajbb2.m.pipedream.net', {
+                            'email': _data.get('email'),
+                        }).then(function (response) {
+                            console.info({ response });
+                            window.location = e.target.dataset.success;
+                        }).catch(function (error) {
+                            console.error({ error });
+                            e.target.querySelector('[type="submit"]').disabled = false;
+                        });
+                    }).catch(function (error) {
+                        console.error({ error });
+                        e.target.querySelector('[type="submit"]').disabled = false;
+                    });
             });
         } catch (error) {
-            console.error({error});
+            console.error({ error });
             e.target.querySelector('[type="submit"]').disabled = false;
         }
     })

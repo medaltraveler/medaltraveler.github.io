@@ -1,3 +1,4 @@
+{% assign id = include.header | slugify %}
 <div class="row justify-content-between align-items-center py-5">
     <div class="col-12 col-md-5 order-2 order-md-1">
         <h1 class="display-4">{{ include.header }}</h1>
@@ -24,6 +25,22 @@
         </p>
     </div>
     <div class="col-12 col-md-6 order-1 order-md-2 pl-md-0 mb-4 mb-md-0">
-        <img class="w-100" src="{{ include.image.src | relative_url }}" alt="{{ include.image.alt }}" />
+        <div class="swiper has-outside-pagination">
+            <div class="swiper-container" data-slider="{{ id }}-slider">
+                <div class="swiper-wrapper">
+                    {% for image in include.images %}
+                    <div class="swiper-slide">
+                        <img class="w-100" src="{{ image.src | relative_url }}" alt="{{ image.alt }}" />
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-outside" data-slider-pagination="{{ id }}-slider"></div>
+            <a class="carousel-control-prev" data-slider-prev="{{ id }}-slider" href="">
+                <div class="carousel-control-prev-icon"></div>
+            </a><a class="carousel-control-next" data-slider-next="{{ id }}-slider" href="">
+                <div class="carousel-control-next-icon"></div>
+            </a>
+        </div>
     </div>
 </div>

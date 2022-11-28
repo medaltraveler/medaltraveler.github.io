@@ -1,7 +1,21 @@
+home:
+  images:
+    -
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/win-medals
+      alt: Win medals while discovering the world
+    -
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/plan-your-trip
+      alt: Plan your entire trip in one click
+    -
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/bookings
+      alt: All your bookings in one place
+  header: Win medals, plan and enjoy your trip
+
 win_medals:
   images:
-    - assets/pictures/full-phone-555x380.png
-    - assets/pictures/head-phone-555x380.png
+    -
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/win-medals
+      alt: Win medals while discovering the world
   header: Win medals while discovering the world
   description: |
     Every time you visit a place, city or monument, you will win a medal that will be your VIP pass towards a discount list.
@@ -9,8 +23,9 @@ win_medals:
 
 plan_your_trip:
   images:
-    - assets/pictures/full-phone-555x380.png
-    - assets/pictures/head-phone-555x380.png
+    -
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/plan-your-trip
+      alt: Plan your entire trip in one click
   header: Plan your entire trip in one click
   description: |
     Don't waste time planning your vacation. We have an itinerary planner that allows you to create an entire route with just one click.
@@ -18,8 +33,9 @@ plan_your_trip:
 
 bookings:
   images:
-    - assets/pictures/full-phone-555x380.png
-    - assets/pictures/head-phone-555x380.png
+    -
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/bookings
+      alt: All your bookings in one place
   header: All your bookings in one place
   description: |
     No more stress of searching for your reservation emails, as all your activities confirmations will be in the same place.

@@ -1,25 +1,6 @@
-<div class="row justify-content-between align-items-center py-5">
-    <div class="col-12 col-md-5">
-        <h1 class="display-4">{{ site.data.features.win_medals.header }}</h1>
-        <p class="large mb-4">{{ site.data.features.win_medals.description }}</p>
-    </div>
-    <div class="col-12 col-md-6 pl-md-0 mb-4 mb-md-0">
-        <div class="swiper has-outside-pagination">
-            <div class="swiper-container" data-slider="medals-slider">
-                <div class="swiper-wrapper">
-                    {% for image in site.data.features.win_medals.images %}
-                    <div class="swiper-slide">
-                        <img class="w-100" src="{{ image | relative_url }}" alt="{{ site.data.features.win_medals.header }}" />
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="swiper-pagination swiper-pagination-outside" data-slider-pagination="medals-slider"></div>
-            <a class="carousel-control-prev" data-slider-prev="medals-slider" href="">
-                <div class="carousel-control-prev-icon"></div>
-            </a><a class="carousel-control-next" data-slider-next="medals-slider" href="">
-                <div class="carousel-control-next-icon"></div>
-            </a>
-        </div>
-    </div>
-</div>
+{% assign image=site.data.features.win_medals.images[0] %}
+{% include section.html
+    image=image
+    header=site.data.features.win_medals.header
+    description=site.data.features.win_medals.description
+%}

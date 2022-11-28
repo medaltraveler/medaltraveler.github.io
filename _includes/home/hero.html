@@ -1,7 +1,7 @@
-{% include hero.html
-    image="assets/pictures/full-phone-555x380.png"
-    header="Win medals, plan and enjoy your trip"
-    description=""
+{% assign images=site.data.features.home.images %}
+{% include hero-slider.html
+    images=images
+    header=site.data.features.home.header
 %}
 
 {% include win-medals/section.html %}

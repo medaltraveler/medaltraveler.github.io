@@ -14,7 +14,7 @@ function loadSliders() {
             },
             pagination: {
                 el: `[data-slider-pagination="${_swiper}"]`,
-                clickable: true
+                clickable: false
             }
         });
     }

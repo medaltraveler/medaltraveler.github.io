@@ -1,20 +1,20 @@
 home:
   images:
     -
-      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/win-medals
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/win-medals-app
       alt: Win medals while discovering the world
     -
-      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/plan-your-trip
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/plan-your-trip-app
       alt: Plan your entire trip in one click
     -
-      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/bookings
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/bookings-app
       alt: All your bookings in one place
   header: Win medals, plan and enjoy your trip
 
 win_medals:
   images:
     -
-      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/win-medals
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/win-medals-app
       alt: Win medals while discovering the world
   header: Win medals while discovering the world
   description: |
@@ -24,7 +24,7 @@ win_medals:
 plan_your_trip:
   images:
     -
-      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/plan-your-trip
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/plan-your-trip-app
       alt: Plan your entire trip in one click
   header: Plan your entire trip in one click
   description: |
@@ -34,7 +34,7 @@ plan_your_trip:
 bookings:
   images:
     -
-      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/bookings
+      src: https://res.cloudinary.com/medaltraveler/image/upload/f_auto,dpr_auto,q_auto:best,w_800,h_600,c_pad/medaltraveler.com/bookings-app
       alt: All your bookings in one place
   header: All your bookings in one place
   description: |

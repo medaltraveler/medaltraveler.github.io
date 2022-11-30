@@ -5,18 +5,7 @@
         {% if include.description %}
         <p class="large mb-4">{{ include.description }}</p>
         {% endif %}
-        <form action="#" class="input-group mb-2" id="form" data-success="{{ '/thank-you' | relative_url }}">
-            <input type="email" name="email" required class="form-control form-control-lg"
-                placeholder="your@email.com" />
-            <div class="input-group-append">
-                <button
-                    type="submit"
-                    class="btn btn-lg btn-primary"
-                >
-                    Send
-                </button>
-            </div>
-        </form>
+        {% include form.html %}
         <p class="small">
             By clicking the Button you confirming that you are agree with our following
             <a class="text-dark weight-500"

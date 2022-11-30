@@ -20,13 +20,7 @@ function loadSliders() {
     }
 }
 
-function handleSubscriptionForm(selector) {
-    var _form = document.querySelector(selector);
-
-    if (_form === null) {
-        return;
-    }
-
+function handleSubscriptionForm(_form) {
     _form.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -60,7 +54,27 @@ function handleSubscriptionForm(selector) {
     })
 }
 
+function loadSubscriptionForms() {
+    var i = 0, _forms = document.querySelectorAll('[data-form]');
+
+    for (i; i < _forms.length; i++) {
+        handleSubscriptionForm(_forms[i]);
+    }
+}
+
+function listenOpenModalEvents() {
+    $('[data-modal]').on('shown.bs.modal', function () {
+        $(this).find('input[type="email"]').first().focus();
+        console.log($(this).attr('id'))
+    })
+
+    $('[data-modal]').on('hidden.bs.modal', function () {
+        console.log($(this).attr('id'))
+    })
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-    handleSubscriptionForm('#form');
     loadSliders();
+    loadSubscriptionForms();
+    listenOpenModalEvents();
 });

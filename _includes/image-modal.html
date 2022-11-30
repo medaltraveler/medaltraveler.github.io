@@ -1,0 +1,17 @@
+<div id="{{ include.id }}" class="modal fade" tabindex="-1" role="dialog" data-modal="{{ include.id }}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="close">
+                <button type="button" class="close w-100 h-100" data-dismiss="modal" aria-label="Close">
+                    <img loading="lazy" class="d-block m-auto" alt="Close" src="{{ '/assets/glyphs/close.svg' | relative_url }}" />
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <h2>{{ include.header }}</h2>
+                <img loading="lazy" class="w-100" src="{{ include.image.src | relative_url }}" alt="{{ include.image.alt }}" />
+                <p class="my-4">{{ include.description }}</p>
+                {% include form.html %}
+            </div>
+        </div>
+    </div>
+</div>
